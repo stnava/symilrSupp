@@ -1,0 +1,49 @@
+---
+title: "Software for learning multi-view brain embeddings and application to testing a genotype-phenotype hypothesis in depression: Supplemental analyses"
+author: "Brian B. Avants et al."
+date: "10/21/2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+# Comparison with SVD
+
+The reviewer requested a comparison between SyMILR and SVD performed on the same dataset and with analogous study design.  The figures below summarize the omnibus model relationships between the low-dimensional thickness, FA and SNP embeddings produced by SVD and each of the anxiety and depression clinical scores.  Both models produce R$^2$ of 0.23.
+
+\newpage
+## SVD-based prediction of anxiety
+
+![SVD Anxiety](./figures/PHX_ANX_TOTALRevSVD.pdf)
+
+\newpage
+## SVD-based prediction of depression
+
+![SVD Depression](./figures/PHX_DEP_TOTALRevSVD.pdf)
+
+
+\newpage
+# SyMILR results using pure train/test split in data *without* any clinical scores.
+
+Prediction of MRI-based anatomical measurements from SNPs guided parameter setting in the main paper.  The resulting embeddings were tested for relationships with clinical anxiety and depression measurements.  Although no use of clinical measurements was made during parameter setting, the reviewer requested a second analysis that did not reference any MRI data from the population that contained clinical measurements.  The results, are, overall similar in this second set of analyses to that provided in the main paper.   The figures are below. Model R$^2$ for depression is 0.26 and for anxiety is 0.31.
+
+\newpage
+## Supplementary SyMILR-based prediction of anxiety
+
+![SyMILR Anxiety](./figures/PHX_ANX_TOTALRev.pdf)
+
+\newpage
+## Supplementary SyMILR-based prediction of depression
+
+![SyMILR Depression](./figures/PHX_DEP_TOTALRev.pdf)
+
+\newpage
+
+## Supplementary visualization of embeddings
+
+![Thickness](figures/revThick.png)
+
+![FA](figures/revFA.png)
+
+![SNPs](figures/pingSNPweightsNewSplit.pdf)
