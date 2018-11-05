@@ -17,11 +17,18 @@ The reviewer requested a comparison between SyMILR and SVD performed on the same
 
 ![SVD Anxiety](./figures/PHX_ANX_TOTALRevSVD.pdf)
 
+symilr prediction, for comparison:
+
+![SyMILR Anxiety](./figures/PHX_ANX_TOTALRevSyM.pdf)
+
 \newpage
 ## SVD-based prediction of depression
 
 ![SVD Depression](./figures/PHX_DEP_TOTALRevSVD.pdf)
 
+symilr prediction, for comparison:
+
+![SyMILR Depression](./figures/PHX_DEP_TOTALRevSyM.pdf)
 
 \newpage
 # SyMILR results using pure train/test split in data *without* any clinical scores.
@@ -47,3 +54,18 @@ Prediction of MRI-based anatomical measurements from SNPs guided parameter setti
 ![FA](figures/revFA.png)
 
 ![SNPs](figures/pingSNPweightsNewSplit.pdf)
+
+
+## Selecting an operating point based on reconstruction
+
+
+We evalute reconstruction error in test data to determine a "best" 
+sparseness parameter value.  The shaded area was not searched but 
+is shown here for completeness.  It was not searched because we 
+restricted the parameter domain to sparseness values $\ge 0.5$.
+The selected operating point is circled.  The x-axis shows 
+sparseness values while the vertical axes are reconstruction errors.
+
+![Reconstruction](figures/operatingPoint.png)
+
+
