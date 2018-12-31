@@ -65,10 +65,8 @@ Prediction of MRI-based anatomical measurements from SNPs guided parameter setti
 
 
 We evalute reconstruction error in test data to determine a "best" 
-sparseness parameter value for the SNP data.  
-Prior selected values were used for neuroanatomical data.
-The shaded area was not searched but 
-is shown here for completeness.  It was not searched because we 
+sparseness parameter value for the SNP data.  Prior selected values were used for neuroanatomical data.
+The shaded area was not searched but is shown here for completeness.  It was not searched because we 
 restricted the parameter domain to sparseness values $\ge 0.5$.
 The selected operating point is circled.  The x-axis shows 
 sparseness values while the vertical axes are reconstruction errors.
