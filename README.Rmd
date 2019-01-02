@@ -7,6 +7,18 @@ output:
   html_document: default
 ---
 
+\newpage
+
+# Histograms for permutation results
+
+
+
+We permuted the input matrices and re-ran the modeling steps with fixed sparseness values.  The omnibus model's base parameters (age, gender, GAF, scanner type, etc) were not permuted.  Only the embedding parameters were resampled.  The distribution of results is centered around 0.14 for depression and 0.19 for anxiety.  The tails did not reach the unpermuted model fit in any resampling run.
+
+![Histogram of results over 1000 permutations.  No instances of the permuted data model produced R$^2$ that exceeded the real data (0.31 and 0.32 respectively)](./figures/permutationResultsHistogram.png)
+
+
+\newpage
 
 # Comparison with SVD
 
